@@ -16,7 +16,6 @@ const el = DomCreaterProxy.div({ class: "aaa" },
         DomCreaterProxy.li({ style: "color:blue;" }, "Movie")
     )
 );
-var aa;
 
 document.body.appendChild(el);
 document.body.appendChild(SetTest);
