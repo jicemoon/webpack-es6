@@ -1,9 +1,8 @@
-import Person from './Person.js';
 import { DomCreaterProxy } from "./DomCreate.js";
-import SetTest from "./Set.js";
 
-let p = new Person('张三', 20);
-document.write(`<span>${p.say()}</span> <br/><br/>`);
+import SetTest from "./Set.js";
+import MapTest from "./Map.js";
+
 const el = DomCreaterProxy.div({ class: "aaa" },
     'Hello, my name is ',
     DomCreaterProxy.a({ href: '//example.com' }, 'Mark'),
@@ -19,3 +18,4 @@ const el = DomCreaterProxy.div({ class: "aaa" },
 
 document.body.appendChild(el);
 document.body.appendChild(SetTest);
+document.body.appendChild(MapTest);

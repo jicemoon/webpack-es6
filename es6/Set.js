@@ -2,7 +2,7 @@ import { createDomCommon } from "./DomCreate.js";
 var root = createDomCommon("fieldset", createDomCommon("legend", "数据结构 - Set"));
 
 
-root.appendChild(createDomCommon("h1", "基本用法", { style: "color: #cc00ff" }));
+root.appendChild(createDomCommon("h1", "基本用法"));
 var s = new Set();
 [2, 3, 5, 4, 5, 2, 2].map(x => s.add(x));
 var ul = createDomCommon("ul");
@@ -46,18 +46,18 @@ root.appendChild(
 
 
 ////////////////////////////////////
-root.appendChild(createDomCommon("h1", "实例属性和方法", { style: "color: #cc00ff; margin-top: 60px;" }));
+root.appendChild(createDomCommon("h1", "实例属性和方法"));
 root.appendChild(
     createDomCommon("fieldset",
         createDomCommon("legend", "属性", { style: "color: red" }),
         createDomCommon("ul",
             createDomCommon("li",
-                createDomCommon("code", "Set.prototype.constructor", { style: "color: #c7254e" }),
-                createDomCommon("span", "构造函数，默认就是Set函数", { style: "margin-left:15px;" })
+                createDomCommon("code", "Set.prototype.constructor", { class: "title" }),
+                createDomCommon("span", "构造函数，默认就是Set函数")
             ),
             createDomCommon("li",
-                createDomCommon("code", "Set.prototype.size", { style: "color: #c7254e" }),
-                createDomCommon("span", "返回Set实例的成员总数", { style: "margin-left:15px;" })
+                createDomCommon("code", "Set.prototype.size", { class: "title" }),
+                createDomCommon("span", "返回Set实例的成员总数")
             )
         )
     )
@@ -67,22 +67,29 @@ root.appendChild(
         createDomCommon("legend", "方法", { style: "color: red" }),
         createDomCommon("ul",
             createDomCommon("li",
-                createDomCommon("code", "add(value)", { style: "color: #c7254e" }),
-                createDomCommon("span", "添加某个值，返回Set结构本身", { style: "margin-left:15px;" })
+                createDomCommon("code", "add(value)", { class: "title" }),
+                createDomCommon("span", "添加某个值，返回Set结构本身")
             ),
             createDomCommon("li",
-                createDomCommon("code", "delete(value)", { style: "color: #c7254e" }),
-                createDomCommon("span", "删除某个值, 返回一个布尔值, 表示删除是否成功", { style: "margin-left:15px;" })
+                createDomCommon("code", "delete(value)", { class: "title" }),
+                createDomCommon("span", "删除某个值, 返回一个布尔值, 表示删除是否成功")
             ),
             createDomCommon("li",
-                createDomCommon("code", "has(value)", { style: "color: #c7254e" }),
-                createDomCommon("span", "返回一个布尔值, 表示该值是否为Set的成员", { style: "margin-left:15px;" })
+                createDomCommon("code", "has(value)", { class: "title" }),
+                createDomCommon("span", "返回一个布尔值, 表示该值是否为Set的成员")
             ),
             createDomCommon("li",
-                createDomCommon("code", "clear()", { style: "color: #c7254e" }),
-                createDomCommon("span", "清除所有成员, 没有返回值", { style: "margin-left:15px;" })
+                createDomCommon("code", "clear()", { class: "title" }),
+                createDomCommon("span", "清除所有成员, 没有返回值")
             )
         )
     )
 );
+
+root.appendChild(createDomCommon("h1", "遍历keys(), values(), entries(), forEach"));
+let eSet = new Set(['red', 'green', 'blue']);
+for (let item of eSet.entries()) {
+    let tSpan = createDomCommon("span", "" + item, {style:"margin-right: 20px; "});
+  root.appendChild(tSpan);
+}
 export default root;

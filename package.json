@@ -4,7 +4,8 @@
     "description": "webpack-es6 test",
     "main": "index.js",
     "scripts": {
-        "start": "webpack-dev-server --hot --inline --progress --colors --watch --dev"
+        "pack": "webpack --progress --colors --watch --dev",
+        "start": "webpack-dev-server --hot --inline --port=8961 --progress --colors"
     },
     "author": "jicemoon",
     "license": "ISC",
