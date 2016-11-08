@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "pack": "webpack --progress --colors --watch --dev",
-        "start": "webpack-dev-server --hot --inline --port=8961 --progress --colors"
+        "start": "webpack-dev-server --hot --inline --port=8961 --progress --colors --dev"
     },
     "author": "jicemoon",
     "license": "ISC",

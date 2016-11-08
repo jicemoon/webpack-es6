@@ -7,7 +7,7 @@
             "name": "Launch Program",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}\\node-run\\Generator-test.js",
+            "program": "${workspaceRoot}\\node-run\\Promise-test.js",
             "cwd": "${workspaceRoot}",
             "outFiles": [],
             "sourceMaps": true
