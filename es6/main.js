@@ -18,7 +18,7 @@ const el = DomCreaterProxy.div({ class: "aaa" },
 );
 let loadImg = loadImageAsync("../content/images/timg.jpg");
 let loadImg0 = loadImg.then(function(img) {
-    img.style.width = "400px";
+    img.style.width = "450px";
     document.body.appendChild(img);
 });
 console.log(loadImg == loadImg0);
