@@ -2,7 +2,10 @@ var webpack = require('webpack');
 var path = require('path');
 var hotMiddlewareScript = 'webpack-hot-middleware/client?reload=true';
 module.exports = {
-    entry: ["./es6/main.js", hotMiddlewareScript],
+    entry: [
+        'webpack-dev-server/client?http://localhost:8961',
+        "./es6/main.js", hotMiddlewareScript
+    ],
     output: {
         path: __dirname,
         filename: "bundle.js"

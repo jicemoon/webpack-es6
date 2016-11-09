@@ -4,6 +4,8 @@
 
 /node_modules
 /bundle.js
+*.hot-update.js
+*.hot-update.json
 
 # User-specific files
 *.suo
