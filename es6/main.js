@@ -3,6 +3,7 @@ import { DomCreaterProxy } from "./DomCreate.js";
 import SetTest from "./Set.js";
 import MapTest from "./Map.js";
 import { loadImageAsync, getJSON } from "./Promise.js";
+import {} from "./Class.js";
 
 const el = DomCreaterProxy.div({ class: "aaa" },
     'Hello, my name is ',

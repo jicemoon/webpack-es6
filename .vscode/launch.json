@@ -4,6 +4,14 @@
     // For further information visit https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [{
+            "name": "class-test",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}\\node-run\\class-test.js",
+            "cwd": "${workspaceRoot}",
+            "outFiles": [],
+            "sourceMaps": true
+        }, {
             "name": "Async-test",
             "type": "node",
             "request": "launch",
